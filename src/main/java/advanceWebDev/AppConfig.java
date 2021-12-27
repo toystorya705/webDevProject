@@ -24,10 +24,9 @@ public class AppConfig {
 
         //Create list of web scrapers and add to scraper manager
         ArrayList<WebScraper> scraperList = new ArrayList();
-
+        scraperList.add(scraper3());
         scraperList.add(scraper2());
         scraperList.add(scraper1());
-        scraperList.add(scraper3());
         scraperList.add(scraper4());
         scraperList.add(scraper5());
         scraperManager.setWebScraperArrayList(scraperList);

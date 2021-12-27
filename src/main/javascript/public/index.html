@@ -12,98 +12,113 @@
     <script src="https://unpkg.com/vue"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="//unpkg.com/vue-plain-pagination@0.2.1"></script>
 
 </head>
 
 <body>
 
 <div id="body">
-    <!--advanceWebDev.Main body for background colour-->
+
+
     <div id="app">
 
+        <header>
+            <img style="width: 200px; margin-top: -45px; position: relative" src="image/logo3.png">
+            <!--This display home butoon on product card and product display page-->
+            <button v-if="showSmallSearchBar" v-on:click="showBannerSearch()" style="cursor:pointer;"> Home</button>
+            <button v-if="sortOption" v-on:click="search(null)" style="cursor:pointer;">Back</button>
+            <div class="sortPoint">
+                <p v-if=" sortOption===true||sortOption===false">
+                    <input v-if="sortOption" v-on:click="filterClick" type="radio" id="price" value="price" v-model="filterName">
+                    <label v-if="sortOption" for="price">Price</label>
+                    <input v-if="!sortOption" v-on:click="filterClick" type="radio" id="name" value="name" v-model="filterName">
+                    <label v-if="!sortOption" for="name">Name</label>
+                </p>
 
-        <div class="container">
-            <div class="row height d-flex justify-content-center align-items-center">
-                <div class="col-md-8" style="display: inline-flex">
-                    <div class="search"><i class="fa fa-search"></i> <input  v-model="filter" type="text" class="form-control"
-                                                                            placeholder="Have a question? Ask Now">
+                <p v-if=" sortOption===true||sortOption===false"><input type="radio" id="asc" value="asc" v-model="sort">
+                    <label for="asc">Ascending</label>
+                    <input type="radio" id="desc" value="desc" v-model="sort">
+                    <label for="desc">Descending</label>
+                </p>
+            </div>
+
+            <div v-if="sortOption===false" class="pageNumber">
+                <p> {{(pageIndex * 12 - 12)}}-{{(pageIndex * 12)}} of {{searchedProductCount}} results for  <p> "{{filter}}" </p>  out of {{totalProductCount}} Products</p>
+            </div>
+
+
+            <div v-if="showSmallSearchBar" class="searchbar">
+
+                <div class="magnifineicon">
+                    <a v-on:click="search(null)" id="click_search"> <img src="image/magnifineicon.png" alt="Logo"></a>
+                </div>
+                <input v-model="filter" id="searcfield" type="text" placeholder="Search"></input>
+
+            </div>
+
+
+        </header>
+        <!--This display home page-->
+
+        <div v-if="bannerSearch" class="bannerSearch">
+
+            <video autoplay muted loop id="myVideo">
+                <source src="video/dji_video.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="container">
+                <div class="row height d-flex justify-content-center align-items-center">
+                    <div class="col-md-8" style="display: inline-flex">
+                        <div class="search"><i class="fa fa-search"></i> <input v-model="filter" type="text"
+                                                                                class="form-control"
+                                                                                placeholder="Search Product">
+                        </div>
+                        <button v-on:click="search(null)" class="btn btn-primary">Search</button>
                     </div>
-                    <button v-on:click="search(null)"class="btn btn-primary">Search</button>
                 </div>
             </div>
         </div>
 
-        <div v-if='showProduct'>
+
+        <div v-else-if='showProduct'>
 
 
+            <div class="products" id="productid" style="margin-top:-100px;padding-bottom:30px;">
+                <!--This create products card-->
+                <!-- Products Data -->
+                <div class="productBox">
+                    <div @click="search(0, product.product_id)" v-for="product in getProduct" class="img1"><img
+                            style="cursor:pointer;" v-bind:src="product.image_url">
+                        <p style="  text-transform: uppercase;"> {{product.name}}</p>
 
-
-            <p>
-                <input v-on:click="defaultClick" type="radio" id="default" value="default" v-model="filterName">
-                <label for="default">Default</label>
-                <input v-on:click="filterClick" type="radio" id="price" value="price" v-model="filterName">
-                <label for="price">Price</label>
-                <input v-on:click="filterClick" type="radio" id="name" value="name" v-model="filterName">
-                <label for="name">Name</label>
-            </p>
-
-            <p><input type="radio" id="asec" value="asec" v-model="sort">
-                <label for="asec">Aescending</label>
-                <input type="radio" id="dsec" value="dsec" v-model="sort">
-                <label for="dsec">Descending</label>
-            </p>
-
-
-
-            <h1>BSc Information Techonology</h1>
-
-
-            <div>
-                <h1> {{searchedProductCount}} out of {{totalProductCount}} </h1>
+                    </div>
+                </div>
             </div>
+
 
             <div class="pageOffsetNumber">
                 <button class="btn" type="button" @click="search(index)" v-for="index in pageOffsetNumberCount"
                         :key="index" :class="{active: activeBtn === index }">{{index}}
                 </button>
-
             </div>
-            <section class="section-products">
-                <div class="container">
-
-                    <div @click="search(0, product.product_id)"  v-for="product in getproduct" class="col-md-4 mt-2"
-                         style="width: 18rem;">
-                        <div id="product-1" class="single-product">
-                            <div class="part-1">
-                                <img class="card-img-top" v-bind:src="product.image_url" alt="Card image cap">
-                            </div>
-                            <div class="part-2">
-
-                                <p class="product-title" style=" text-transform: uppercase;">Name: {{product.name}}</p>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </section>
 
 
         </div>
 
         <div v-else>
 
+            <!--This displays products display page-->
 
             <div class="container">
                 <div class="card">
                     <div class="card-body">
                         <h3 class="card-title"
-                            style="text-transform: uppercase;font-weight: bold;margin-top: 20px;">
+                            style="text-transform: uppercase;font-weight: bolder;margin-top: 20px;    font-family: Comic Sans MS, Comic Sans, cursive;
+">
                             {{product[0].name}}</h3>
-                        <!--                            <h6 class="card-subtitle">globe type chair for rest</h6>-->
                         <div class="row">
-                            <div class="col-lg-5 col-md-5 col-sm-6" style="margin-top: 100px;     ">
+                            <div class="col-lg-5 col-md-5 col-sm-6" style="margin-top: 50px;     ">
                                 <div class="white-box text-center"><img v-bind:src="product[0].image_url"
                                                                         class="img-responsive"></div>
                             </div>
@@ -111,10 +126,10 @@
 
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <h3 class="box-title mt-5">Website Links</h3>
-                                    <div class="table-responsive">
+                                    <div class="table-responsive" style="height:80vh ;overflow-y: auto">
                                         <table class="table table-striped table-product">
                                             <tbody>
-                                            <tr v-for="product in getproduct">
+                                            <tr v-for="product in getProduct">
 
                                                 <td width="390" v-bind:href=product.url>
                                                     <div style="width: 20%">

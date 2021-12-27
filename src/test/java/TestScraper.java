@@ -153,81 +153,81 @@ public class TestScraper {
 
     }
 
-//
-//    @Test
-//    @DisplayName("Amazon Scraper")
-//    void amazonScraperTest() {
-//
-//        //Create an instance of the class that we want to test
-//        AmazonProductsData scraper = new AmazonProductsData();
-//        scraper.setSearchTerm("dji");
-//        scraper.setTimeDelay(500);
-//        scraper.run();
-//
-//        assert (scraper.getProductList().size() > 0);
-//        scraper.stopScraping();
-//
-//    }
-//    @Test
-//    @DisplayName("Argos Scraper")
-//    void argosScraperTest() {
-//
-//        //Create an instance of the class that we want to test
-//        ArgosProductsData scraper = new ArgosProductsData();
-//        scraper.setSearchTerm("dji");
-//        scraper.setTimeDelay(500);
-//        scraper.run();
-//
-//        assert (scraper.getProductList().size() > 0);
-//        scraper.stopScraping();
-//
-//    }
-//
-//    @Test
-//    @DisplayName("Ebay Scraper")
-//    void ebayScraperTest() {
-//
-//        //Create an instance of the class that we want to test
-//        EbayProductsData scraper = new EbayProductsData();
-//        scraper.setSearchTerm("dji");
-//        scraper.setTimeDelay(500);
-//        scraper.run();
-//
-//        assert (scraper.getProductList().size() > 0);
-//        scraper.stopScraping();
-//
-//    }
-//
-//
-//    @Test
-//    @DisplayName("Very Scraper")
-//    void veryScraperTest() {
-//
-//        //Create an instance of the class that we want to test
-//        VeryProductData scraper = new VeryProductData();
-//        scraper.setSearchTerm("dji");
-//        scraper.setTimeDelay(500);
-//        scraper.run();
-//
-//        assert (scraper.getProductList().size() > 0);
-//        scraper.stopScraping();
-//
-//    }
-//
-//    @Test
-//    @DisplayName("Wex Photos Scraper")
-//    void wexScraperTest() {
-//
-//        //Create an instance of the class that we want to test
-//        WexProductsData scraper = new WexProductsData();
-//        scraper.setSearchTerm("dji");
-//        scraper.setTimeDelay(500);
-//        scraper.run();
-//
-//        assert (scraper.getProductList().size() > 0);
-//        scraper.stopScraping();
-//
-//    }
+
+    @Test
+    @DisplayName("Amazon Scraper")
+    void amazonScraperTest() {
+
+        //Create an instance of the class that we want to test
+        AmazonProductsData scraper = new AmazonProductsData();
+        scraper.setSearchTerm("dji");
+        scraper.setTimeDelay(500);
+        scraper.run();
+
+        assert (scraper.getProductList().size() > 0);
+        scraper.stopScraping();
+
+    }
+    @Test
+    @DisplayName("Argos Scraper")
+    void argosScraperTest() {
+
+        //Create an instance of the class that we want to test
+        ArgosProductsData scraper = new ArgosProductsData();
+        scraper.setSearchTerm("dji");
+        scraper.setTimeDelay(500);
+        scraper.run();
+
+        assert (scraper.getProductList().size() > 0);
+        scraper.stopScraping();
+
+    }
+
+    @Test
+    @DisplayName("Ebay Scraper")
+    void ebayScraperTest() {
+
+        //Create an instance of the class that we want to test
+        EbayProductsData scraper = new EbayProductsData();
+        scraper.setSearchTerm("dji");
+        scraper.setTimeDelay(500);
+        scraper.run();
+
+        assert (scraper.getProductList().size() > 0);
+        scraper.stopScraping();
+
+    }
+
+
+    @Test
+    @DisplayName("Very Scraper")
+    void veryScraperTest() {
+
+        //Create an instance of the class that we want to test
+        VeryProductData scraper = new VeryProductData();
+        scraper.setSearchTerm("dji");
+        scraper.setTimeDelay(500);
+        scraper.run();
+
+        assert (scraper.getProductList().size() > 0);
+        scraper.stopScraping();
+
+    }
+
+    @Test
+    @DisplayName("Wex Photos Scraper")
+    void wexScraperTest() {
+
+        //Create an instance of the class that we want to test
+        WexProductsData scraper = new WexProductsData();
+        scraper.setSearchTerm("dji");
+        scraper.setTimeDelay(500);
+        scraper.run();
+
+        assert (scraper.getProductList().size() > 0);
+        scraper.stopScraping();
+
+    }
 
 
     @AfterEach
