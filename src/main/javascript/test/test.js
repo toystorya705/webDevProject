@@ -1,9 +1,9 @@
 //File containing the functions that we are testing
 require('../server.js');
 
-//Database code defined in external file
-let Database = require('../server.js');
-let app = Database.server;
+//database code defined in external file
+let server = require('../server');
+let app = server.server;
 
 //Built in Node.js assertions
 const assert = require("assert");
@@ -15,7 +15,7 @@ let should = chai.should();
 chai.use(chaiHttp);
 
 //Import server
-let server = require('../server');
+
 
 //Mocha/Chai test of RESTful Web Service
 describe('/GET products', () => {
@@ -76,7 +76,7 @@ describe('/GET Product price check', () => {
 });
 
 
-describe('Database', () => {
+describe('database', () => {
 
     //Mocha test for Offset and NumItem.
     describe('#Offset & Limit Check', () => {
@@ -94,7 +94,7 @@ describe('Database', () => {
     });
 });
 
-describe('Database', () => {
+describe('database', () => {
 
     //Mocha test for searching.
     describe('#SearchResult Check', () => {

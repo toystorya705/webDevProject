@@ -10,9 +10,6 @@ let app = express();
 
 //Import the mysql module
 let mysql = require('mysql');
-// const request = require("request");
-// const {response} = require("express");
-// const {stringify} = require("mocha/lib/utils");
 
 //Create a connection object with the user details
 let connectionPool = mysql.createPool({
