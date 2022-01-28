@@ -1,0 +1,245 @@
+
+#body{
+    font-family: verdana;
+
+}
+
+header{
+    height: 70px;
+    background-color: rgba(225, 0, 0, 0.48);
+}
+
+header button {
+    position: absolute;
+    text-decoration: none;
+
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 5px 30px;
+    font-size: 18px;
+    border: 1px solid transparent;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+header  button:hover {
+    padding-right: 60px;
+    background-color: #fff;
+    color: #000;
+    transition: 0.6s ease;
+}
+
+#app > header > button:nth-child(3){
+    margin-left: 120px;
+}
+
+
+
+#app > header > div.sortPoint{
+    position: relative;
+    float: right;
+    margin-top: 5px;
+    margin-left: -10000px;
+    margin-right: 850px;
+    display: block;
+}
+
+#app > header > div.pageNumber{
+    position: relative;
+    float: right;
+    margin-top: 40px;
+    margin-left: -10000px;
+    margin-right: 500px;
+
+    display: inline-flex;
+}
+
+#app > header > div.pageNumber > p:nth-child(2){
+    color: aliceblue;
+    font-weight: bold;
+}
+.searchbar {
+    float: right;
+    height: 40px;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 15px;
+    margin-left: -1000px;
+    margin-right: 100px;
+    display: block;
+}
+#searcfield {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 290px;
+    background-color: rgb(236, 235, 235);
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 0px;
+    padding-left: 10px;
+}
+
+.magnifineicon img {
+    height: 28px;
+    width: 28px;
+    margin-top: 5px;
+    margin-right: 10px;
+    padding: 2.5px;
+    background-color: #ffe600;
+    float: right;
+}
+
+#myVideo {
+    margin-left: -8px;
+    width: 1544px;
+    height: 90.25vh;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    position: absolute;
+    object-fit: cover;
+
+}
+
+.active{
+    background-color:red;
+}
+#app h1{
+    color: red;
+}
+.pageOffsetNumber {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin-top: 20px;*/
+    height: 80px;
+    border: 3px solid green;
+
+    transform: translate(0%,100%);
+
+}
+.pageOffsetNumber button{
+    margin: 5px;
+}
+#app > div.bannerSearch > div > div > div{
+    margin-top: 350px;
+    margin-left: 180px;
+}
+
+#app > .bannerSearch > div > div > div > div > input{
+  width: 600px;
+}
+
+#app > .bannerSearch > div > div > div > button{
+    width: 200px;
+}
+
+
+.pageOffsetNumber .btn button{
+    width: 70px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+}
+
+.search input {
+    height: 60px;
+    text-indent: 25px;
+    border: 2px solid #d6d4d4
+}
+
+.search input:focus {
+    box-shadow: none;
+    border: 2px solid blue
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 16px
+}
+
+.search button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 50px;
+    width: 110px;
+    background: blue
+}
+
+
+
+.products {
+
+    width: 100%;
+    /*background-color: #ffe600;*/
+    transform: translate(0%,17%);
+    /*position: absolute;*/
+    /*margin-top: 100px;*/
+
+
+}
+.products .productBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 50px;
+    width: 100%;
+    background-color: white;
+}
+.products .productBox .img1 {
+position: center;
+    margin-top: 30px;
+
+    /*background-color: rgba(134, 128, 128, 0.75);*/
+    height: 40vh;
+    width: 15%;
+    margin: 5px;
+    /*box-shadow: 10px 0 10px #00e1ff, 0 0 10px #00e1ff, 0 0 10px #00b4ff, 0 0 10px #00e1ff;*/
+
+
+    border-style: solid;
+    border-width:2px 2px;
+}
+
+.products .productBox .img1 img {
+    image-rendering: pixelated;
+    margin-top: 16px;
+    margin-left: 13px;
+    margin-left: 13px;
+    width: 90%;
+    height: 60%;
+}
+
+
+.products .productBox .img1 p {
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
