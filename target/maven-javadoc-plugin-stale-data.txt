@@ -1,0 +1,112 @@
+@options
+@packages
+@argfile
+-classpath
+'C:/Users/toyst/.m2/repository/org/tinylog/tinylog/1.3.6/tinylog-1.3.6.jar;C:/Users/toyst/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.2.0/junit-jupiter-engine-5.2.0.jar;C:/Users/toyst/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar;C:/Users/toyst/.m2/repository/org/junit/platform/junit-platform-engine/1.2.0/junit-platform-engine-1.2.0.jar;C:/Users/toyst/.m2/repository/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.jar;C:/Users/toyst/.m2/repository/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.jar;C:/Users/toyst/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.2.0/junit-jupiter-api-5.2.0.jar;C:/Users/toyst/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar;C:/Users/toyst/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar;C:/Users/toyst/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar;C:/Users/toyst/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar;C:/Users/toyst/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar;C:/Users/toyst/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar;C:/Users/toyst/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar;C:/Users/toyst/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar;C:/Users/toyst/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar;C:/Users/toyst/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar;C:/Users/toyst/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar;C:/Users/toyst/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar;C:/Users/toyst/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar;C:/Users/toyst/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar;C:/Users/toyst/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar;C:/Users/toyst/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar;C:/Users/toyst/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar;C:/Users/toyst/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar;C:/Users/toyst/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar;C:/Users/toyst/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar;C:/Users/toyst/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar;C:/Users/toyst/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar;C:/Users/toyst/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar;C:/Users/toyst/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar;C:/Users/toyst/.m2/repository/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar;C:/Users/toyst/.m2/repository/org/springframework/spring-context/5.0.8.RELEASE/spring-context-5.0.8.RELEASE.jar;C:/Users/toyst/.m2/repository/org/springframework/spring-aop/5.0.8.RELEASE/spring-aop-5.0.8.RELEASE.jar;C:/Users/toyst/.m2/repository/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE.jar;C:/Users/toyst/.m2/repository/org/springframework/spring-core/5.0.8.RELEASE/spring-core-5.0.8.RELEASE.jar;C:/Users/toyst/.m2/repository/org/springframework/spring-jcl/5.0.8.RELEASE/spring-jcl-5.0.8.RELEASE.jar;C:/Users/toyst/.m2/repository/org/springframework/spring-expression/5.0.8.RELEASE/spring-expression-5.0.8.RELEASE.jar;C:/Users/toyst/.m2/repository/org/hibernate/hibernate-core/5.6.1.Final/hibernate-core-5.6.1.Final.jar;C:/Users/toyst/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar;C:/Users/toyst/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar;C:/Users/toyst/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar;C:/Users/toyst/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:/Users/toyst/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar;C:/Users/toyst/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar;C:/Users/toyst/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar;C:/Users/toyst/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar;C:/Users/toyst/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar;C:/Users/toyst/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar;C:/Users/toyst/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar;C:/Users/toyst/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar;C:/Users/toyst/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar;C:/Users/toyst/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar;C:/Users/toyst/.m2/repository/mysql/mysql-connector-java/8.0.12/mysql-connector-java-8.0.12.jar;C:/Users/toyst/.m2/repository/com/google/protobuf/protobuf-java/2.6.0/protobuf-java-2.6.0.jar;C:/Users/toyst/.m2/repository/org/apache/commons/commons-text/1.9/commons-text-1.9.jar;C:/Users/toyst/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar;C:/Users/toyst/.m2/repository/commons-codec/commons-codec/1.14/commons-codec-1.14.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'8'
+-sourcepath
+'C:/Users/toyst/OneDrive - Middlesex University/Documents/WebDevlopmentProject/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2021. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/toyst/OneDrive - Middlesex University/Documents/WebDevlopmentProject/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Practise 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' 'C:/Users/toyst/OneDrive - Middlesex University/Documents/WebDevlopmentProject/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'Practise 1.0-SNAPSHOT API'
+advanceWebDev
+'C:/Users/toyst/OneDrive - Middlesex University/Documents/WebDevlopmentProject/src/main/java/advanceWebDev/AmazonProductsData.java'
+'C:/Users/toyst/OneDrive - Middlesex University/Documents/WebDevlopmentProject/src/main/java/advanceWebDev/AppConfig.java'
+'C:/Users/toyst/OneDrive - Middlesex University/Documents/WebDevlopmentProject/src/main/java/advanceWebDev/ArgosProductsData.java'
+'C:/Users/toyst/OneDrive - Middlesex University/Documents/WebDevlopmentProject/src/main/java/advanceWebDev/EbayProductsData.java'
+'C:/Users/toyst/OneDrive - Middlesex University/Documents/WebDevlopmentProject/src/main/java/advanceWebDev/Main.java'
+'C:/Users/toyst/OneDrive - Middlesex University/Documents/WebDevlopmentProject/src/main/java/advanceWebDev/ProductComparedUrl.java'
+'C:/Users/toyst/OneDrive - Middlesex University/Documents/WebDevlopmentProject/src/main/java/advanceWebDev/ProductDao.java'
+'C:/Users/toyst/OneDrive - Middlesex University/Documents/WebDevlopmentProject/src/main/java/advanceWebDev/ProductData.java'
+'C:/Users/toyst/OneDrive - Middlesex University/Documents/WebDevlopmentProject/src/main/java/advanceWebDev/VeryProductData.java'
+'C:/Users/toyst/OneDrive - Middlesex University/Documents/WebDevlopmentProject/src/main/java/advanceWebDev/WebScraper.java'
+'C:/Users/toyst/OneDrive - Middlesex University/Documents/WebDevlopmentProject/src/main/java/advanceWebDev/WebScraperManager.java'
+'C:/Users/toyst/OneDrive - Middlesex University/Documents/WebDevlopmentProject/src/main/java/advanceWebDev/WexProductsData.java'
+C:\Users\toyst\.m2\repository\org\tinylog\tinylog\1.3.6\tinylog-1.3.6.jar = 1635341927184
+C:\Users\toyst\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.2.0\junit-jupiter-engine-5.2.0.jar = 1635913602740
+C:\Users\toyst\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar = 1635913601029
+C:\Users\toyst\.m2\repository\org\junit\platform\junit-platform-engine\1.2.0\junit-platform-engine-1.2.0.jar = 1635913602757
+C:\Users\toyst\.m2\repository\org\junit\platform\junit-platform-commons\1.2.0\junit-platform-commons-1.2.0.jar = 1635913601055
+C:\Users\toyst\.m2\repository\org\opentest4j\opentest4j\1.1.0\opentest4j-1.1.0.jar = 1635913600929
+C:\Users\toyst\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.2.0\junit-jupiter-api-5.2.0.jar = 1635913601071
+C:\Users\toyst\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar = 1636002407775
+C:\Users\toyst\.m2\repository\org\seleniumhq\selenium\selenium-java\3.14.0\selenium-java-3.14.0.jar = 1636008613443
+C:\Users\toyst\.m2\repository\org\seleniumhq\selenium\selenium-api\3.14.0\selenium-api-3.14.0.jar = 1636008615875
+C:\Users\toyst\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.14.0\selenium-chrome-driver-3.14.0.jar = 1636008613512
+C:\Users\toyst\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.14.0\selenium-edge-driver-3.14.0.jar = 1636008613828
+C:\Users\toyst\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.14.0\selenium-firefox-driver-3.14.0.jar = 1636008614284
+C:\Users\toyst\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.14.0\selenium-ie-driver-3.14.0.jar = 1636008614552
+C:\Users\toyst\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.14.0\selenium-opera-driver-3.14.0.jar = 1636008614914
+C:\Users\toyst\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.14.0\selenium-remote-driver-3.14.0.jar = 1636008615965
+C:\Users\toyst\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.14.0\selenium-safari-driver-3.14.0.jar = 1636008615543
+C:\Users\toyst\.m2\repository\org\seleniumhq\selenium\selenium-support\3.14.0\selenium-support-3.14.0.jar = 1636008615849
+C:\Users\toyst\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar = 1636008616299
+C:\Users\toyst\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar = 1625759532568
+C:\Users\toyst\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar = 1636008616388
+C:\Users\toyst\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar = 1636008616308
+C:\Users\toyst\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar = 1636008616264
+C:\Users\toyst\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar = 1626219696179
+C:\Users\toyst\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar = 1626219696187
+C:\Users\toyst\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar = 1626219696203
+C:\Users\toyst\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar = 1626219696199
+C:\Users\toyst\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar = 1636008616375
+C:\Users\toyst\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar = 1636008616441
+C:\Users\toyst\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar = 1636008616471
+C:\Users\toyst\.m2\repository\com\squareup\okio\okio\1.14.1\okio-1.14.1.jar = 1636008616519
+C:\Users\toyst\.m2\repository\commons-io\commons-io\1.3.2\commons-io-1.3.2.jar = 1636143173265
+C:\Users\toyst\.m2\repository\org\springframework\spring-context\5.0.8.RELEASE\spring-context-5.0.8.RELEASE.jar = 1637376620771
+C:\Users\toyst\.m2\repository\org\springframework\spring-aop\5.0.8.RELEASE\spring-aop-5.0.8.RELEASE.jar = 1637376620472
+C:\Users\toyst\.m2\repository\org\springframework\spring-beans\5.0.8.RELEASE\spring-beans-5.0.8.RELEASE.jar = 1637376620622
+C:\Users\toyst\.m2\repository\org\springframework\spring-core\5.0.8.RELEASE\spring-core-5.0.8.RELEASE.jar = 1637376621018
+C:\Users\toyst\.m2\repository\org\springframework\spring-jcl\5.0.8.RELEASE\spring-jcl-5.0.8.RELEASE.jar = 1637376620734
+C:\Users\toyst\.m2\repository\org\springframework\spring-expression\5.0.8.RELEASE\spring-expression-5.0.8.RELEASE.jar = 1637376620863
+C:\Users\toyst\.m2\repository\org\hibernate\hibernate-core\5.6.1.Final\hibernate-core-5.6.1.Final.jar = 1637393257147
+C:\Users\toyst\.m2\repository\org\jboss\logging\jboss-logging\3.4.2.Final\jboss-logging-3.4.2.Final.jar = 1637393256771
+C:\Users\toyst\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar = 1637393257025
+C:\Users\toyst\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar = 1637393257115
+C:\Users\toyst\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar = 1637393257395
+C:\Users\toyst\.m2\repository\org\jboss\jandex\2.2.3.Final\jandex-2.2.3.Final.jar = 1637393257742
+C:\Users\toyst\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar = 1637393257693
+C:\Users\toyst\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar = 1637393259143
+C:\Users\toyst\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar = 1637393258086
+C:\Users\toyst\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar = 1637393258302
+C:\Users\toyst\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar = 1637393258499
+C:\Users\toyst\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar = 1637393258835
+C:\Users\toyst\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar = 1637393258869
+C:\Users\toyst\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar = 1637393258881
+C:\Users\toyst\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar = 1637393259086
+C:\Users\toyst\.m2\repository\mysql\mysql-connector-java\8.0.12\mysql-connector-java-8.0.12.jar = 1637412454367
+C:\Users\toyst\.m2\repository\com\google\protobuf\protobuf-java\2.6.0\protobuf-java-2.6.0.jar = 1637412454388
+C:\Users\toyst\.m2\repository\org\apache\commons\commons-text\1.9\commons-text-1.9.jar = 1637505145123
+C:\Users\toyst\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar = 1637505145107
+C:\Users\toyst\.m2\repository\commons-codec\commons-codec\1.14\commons-codec-1.14.jar = 1637957487499
+C:\Users\toyst\OneDrive - Middlesex University\Documents\WebDevlopmentProject\src\main\java = 1639337731364
+C:\Users\toyst\OneDrive - Middlesex University\Documents\WebDevlopmentProject\target\site\apidocs\allclasses-frame.html = 1640055992480
+C:\Users\toyst\OneDrive - Middlesex University\Documents\WebDevlopmentProject\target\site\apidocs\allclasses-noframe.html = 1640055992481
+C:\Users\toyst\OneDrive - Middlesex University\Documents\WebDevlopmentProject\target\site\apidocs\constant-values.html = 1640055992376
+C:\Users\toyst\OneDrive - Middlesex University\Documents\WebDevlopmentProject\target\site\apidocs\deprecated-list.html = 1640055992478
+C:\Users\toyst\OneDrive - Middlesex University\Documents\WebDevlopmentProject\target\site\apidocs\help-doc.html = 1640055992485
+C:\Users\toyst\OneDrive - Middlesex University\Documents\WebDevlopmentProject\target\site\apidocs\index-all.html = 1640055992474
+C:\Users\toyst\OneDrive - Middlesex University\Documents\WebDevlopmentProject\target\site\apidocs\index.html = 1640055992483
+C:\Users\toyst\OneDrive - Middlesex University\Documents\WebDevlopmentProject\target\site\apidocs\overview-tree.html = 1640055992463
+C:\Users\toyst\OneDrive - Middlesex University\Documents\WebDevlopmentProject\target\site\apidocs\package-list = 1640055992359
+C:\Users\toyst\OneDrive - Middlesex University\Documents\WebDevlopmentProject\target\site\apidocs\script.js = 1640055992489
+C:\Users\toyst\OneDrive - Middlesex University\Documents\WebDevlopmentProject\target\site\apidocs\stylesheet.css = 1640055992488
