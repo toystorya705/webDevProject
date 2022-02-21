@@ -1,7 +1,7 @@
 //Import the express and url modules
 let express = require('express');
 let url = require("url");
-
+const port = process.env.PORT || 3000
 //Status codes defined in external file
 require('./http_status.js');
 
@@ -13,13 +13,15 @@ let mysql = require('mysql');
 
 //Create a connection object with the user details
 let connectionPool = mysql.createPool({
-    connectionLimit: 1,
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "price_comparison",
+    connectionLimit: 5,
+    host: "us-cdbr-east-05.cleardb.net",
+    user: "b67e51b20bac08",
+    password: "7989faea",
+    database: "heroku_9c832597e276ce9",
     debug: false
 });
+
+mysql://b67e51b20bac08:7989faea@us-cdbr-east-05.cleardb.net/heroku_9c832597e276ce9?reconnect=true
 
 app.use(express.static("public"));
 
@@ -29,7 +31,7 @@ app.get('/products', handleProductGet);
 app.get('/search/*', handleProductGet);
 
 //Start the app listening on port 8080
-app.listen(8080);
+app.listen(port);
 
 
 /* Handles GET request sent to products path
